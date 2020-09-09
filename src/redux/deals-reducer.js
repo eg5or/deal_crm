@@ -24,16 +24,19 @@ let initialState = {
                     {id: 'ci_1', company: 'Demir', fileUrl: '', sum: 100000},
                     {id: 'ci_2', company: 'Demir', fileUrl: '', sum: 150000}
                 ],
+                sumClientInvoices: 250000,
                 providerInvoices: [
                     {id: 'pi_1', company: 'MC', fileUrl: '', sum: 90000},
                     {id: 'pi_2', company: 'Dipos', fileUrl: '', sum: 120000},
                     {id: 'pi_3', company: 'Akti', fileUrl: '', sum: 5000}
                 ],
+                sumProviderInvoices: 215000,
                 allDocs: [
                     {id: 'ad_1', company: 'MC', fileUrl: '', sum: 90000},
                     {id: 'ad_2', company: 'Dipos', fileUrl: '', sum: 118000},
                     {id: 'ad_3', company: 'Akti', fileUrl: '', sum: 5000}
-                ]
+                ],
+                delta: 20000
             },
             deliver: {
                 drivers: [
@@ -47,8 +50,8 @@ let initialState = {
                     {forwarderName: 'Марк Борисов (К)', sum: 1000}
                 ]
             },
-            commentManager: '',
-            commentHead: ''
+            commentManager: 'Доставка через 2 дня. Клиент хочет вернуть трубу 50х50 и заказать новую, но доплатит позже',
+            commentHead: 'Везем в понедельник'
         },
         {
             id: 2,
@@ -72,14 +75,17 @@ let initialState = {
                     {id: 'ci_1', company: 'AST', fileUrl: '', sum: 35000},
                     {id: 'ci_2', company: 'Demir', fileUrl: '', sum: 30000}
                 ],
+                sumClientInvoices: 250000,
                 providerInvoices: [
                     {id: 'pi_1', company: 'MC', fileUrl: '', sum: 32000},
                     {id: 'pi_2', company: 'Brok', fileUrl: '', sum: 10000}
                 ],
+                sumProviderInvoices: 215000,
                 allDocs: [
                     {id: 'ad_1', company: 'MC', fileUrl: '', sum: 31000},
                     {id: 'ad_2', company: 'Brok', fileUrl: '', sum: 9500}
-                ]
+                ],
+                delta: 20000
             },
             deliver: {
                 drivers: [
@@ -113,8 +119,11 @@ let initialState = {
         },
         docsFiles: {
             clientInvoices: {id: 'ci_1', company: 'AST', fileUrl: '', sum: 35000},
+            sumClientInvoices: 250000,
             providerInvoices: {id: 'pi_1', company: 'MC', fileUrl: '', sum: 32000},
+            sumProviderInvoices: 215000,
             allDocs: {id: 'ad_1', company: 'MC', fileUrl: '', sum: 31000},
+            delta: 20000
         },
         deliver: {
             drivers: {driverName: 'Юсуп Рабаданов', sum: 5700},

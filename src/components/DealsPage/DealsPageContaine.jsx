@@ -3,12 +3,10 @@ import {connect} from 'react-redux';
 import DealsPage from './DealsPage';
 
 const mapStateToProps = (state) => {
-    debugger
     return {
         dealsPage: state.dealsPage
     }
 }
-
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -16,7 +14,5 @@ const mapDispatchToProps = (dispatch) => {
         }
     }
 
+export const DealsPageContaine = connect(mapStateToProps, mapDispatchToProps)(DealsPage);
 
-const DealsPageContaine = connect(mapStateToProps, mapDispatchToProps)(DealsPage);
-
-export default DealsPageContaine;

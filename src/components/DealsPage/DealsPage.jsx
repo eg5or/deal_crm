@@ -3,12 +3,11 @@ import classes from './DealsPage.module.css'
 import DealsItems from './DealsItems/DealsItems';
 
 const DealsPage = (props) => {
-    debugger
-    console.log(props)
     return (
-        <div>
+        <div className={classes.dealsPage}>
+            <div className={classes.filters}> Filters</div>
             <div className={classes.dealsPageItems}>
-                <DealsItems dealsPage={props.dealsPage}/>
+                <DealsItems deals={props.dealsPage.deals}/>
             </div>
         </div>
     )

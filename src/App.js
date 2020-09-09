@@ -4,7 +4,7 @@ import {Route} from 'react-router-dom';
 import Vars from './components/Vars/Vars';
 import Profile from './components/Profile/Profile';
 import PriceListCreator from './components/PriceListCreator/PriceListCreator';
-import DealsPageContaine from './components/DealsPage/DealsPage';
+import {DealsPageContaine} from './components/DealsPage/DealsPageContaine';
 import Companies from './components/Companies/Companies';
 import Calculator from './components/Calculator/Calculator';
 import Header from './components/Header/Header';
