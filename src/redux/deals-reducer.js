@@ -1,4 +1,19 @@
-const ADD_DEAL = 'ADD-DEAL';
+const ADD_DEAL = 'ADD_DEAL';
+const ADD_FILE_TO_CLIENT_INVOICES = 'ADD_FILE_TO_CLIENT_INVOICES';
+const ADD_FILE_TO_PROVIDER_INVOICES = 'ADD_FILE_TO_PROVIDER_INVOICES';
+const ADD_FILE_TO_ALL_DOCS = 'ADD_FILE_TO_ALL_DOCS';
+const TOGGLE_APPROVED = 'TOGGLE_APPROVED';
+const TOGGLE_PROVIDER_PAID = 'TOGGLE_PROVIDER_PAID';
+const TOGGLE_DELIVERED = 'TOGGLE_DELIVERED';
+const TOGGLE_CLIENT_PAID = 'TOGGLE_CLIENT_PAID';
+const TOGGLE_DOC_SIGNED = 'TOGGLE_DOC_SIGNED';
+const TOGGLE_DOC_COLLECTED = 'TOGGLE_DOC_COLLECTED';
+const ADD_DRIVER = 'ADD_DRIVER';
+const ADD_FORWARDER = 'ADD_FORWARDER';
+const EDIT_MANAGER_COMMENT = 'EDIT_MANAGER_COMMENT';
+const EDIT_HEAD_COMMENT = 'EDIT_HEAD_COMMENT';
+
+
 
 let initialState = {
     deals: [
@@ -141,6 +156,20 @@ const dealsReducer = (state = initialState, action) => {
     }
 };
 
-export const addDealActionCreator = () => ({type: ADD_DEAL});
+export const addDealAC = () => ({type: ADD_DEAL});
+export const addFileToClientInvoicesAC = () => ({type: ADD_FILE_TO_CLIENT_INVOICES});
+export const addFileToProviderInvoicesAC = () => ({type: ADD_FILE_TO_PROVIDER_INVOICES});
+export const addFileToAllDocsAC = () => ({type: ADD_FILE_TO_ALL_DOCS});
+export const toggleApprovedAC = () => ({type: TOGGLE_APPROVED});
+export const toggleProviderPaidAC = () => ({type: TOGGLE_PROVIDER_PAID});
+export const toggleDeliveredAC = () => ({type: TOGGLE_DELIVERED});
+export const toggleClientPaidAC = () => ({type: TOGGLE_CLIENT_PAID});
+export const toggleDocSignedAC = () => ({type: TOGGLE_DOC_SIGNED});
+export const toggleDocCollectedAC = () => ({type: TOGGLE_DOC_COLLECTED});
+export const addDriverAC = () => ({type: ADD_DRIVER});
+export const addForwarderAC = () => ({type: ADD_FORWARDER});
+export const editManagerCommentAC = () => ({type: EDIT_MANAGER_COMMENT});
+export const editHeadCommentAC = () => ({type: EDIT_HEAD_COMMENT});
+
 
 export default dealsReducer;
